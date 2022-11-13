@@ -1,0 +1,58 @@
+:root {
+--color-1: #72A98F;
+--color-2: #2B50AA;
+--color-3: #F0Eff4;
+--color-4: #000F08;
+--color-5: #56667A;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--color-3);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-5);
+}
+
+h1 {
+    font-size: 38px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 30px;
+    padding-top: 20%;
+    background-image: url("/assets/images/Ama\ Dablam.JPG")
+    
+}
+
+nav a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+section {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/assets/images/Ama\ Dablam.JPG");
+    background-size: cover;
+    background-position: center;
+}
