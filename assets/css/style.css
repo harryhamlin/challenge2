@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma;
 }
 
 body {
@@ -20,6 +20,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-5);
+    color: var(--color-2);
 }
 
 h1 {
@@ -36,23 +37,40 @@ li {
     list-style: none;
     padding: 30px;
     padding-top: 20%;
-    background-image: url("/assets/images/Ama\ Dablam.JPG")
-    
+    /* background-image: url("/assets/images/Ama\ Dablam.JPG") */   
 }
 
 nav a {
     text-decoration: none;
+    color: var(--color-4)
 }
 
 li a:hover {
-    color: white;
+    color: var(--color-3);
 }
 
-section {
-    height: 400px;
+aside {
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("/assets/images/Ama\ Dablam.JPG");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: baseline;   
+    align-items:flex-end;
 }
+
+h2 {
+    font-size: 22px;;
+    padding: 2%;
+    margin: 2%;
+    background-color: var(--color-5);
+    color: var(--color-2)
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+      flex-direction: column;
+    }
