@@ -49,7 +49,7 @@ li a:hover {
     color: var(--color-3);
 }
 
-aside {
+div {
     height: 300px;
     width: 100%;
     margin-bottom: 25px;
@@ -70,7 +70,47 @@ h2 {
     color: var(--color-2)
 }
 
+main {
+    /* border: 3px solid blue; */
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 3px solid green; */
+    padding: 10px;
+    
+}
+
+aside {
+    border-right: 2px solid var(--color-4);
+    font-size: 38px;
+    width: 15%;
+    /* border: 3px solid red; */
+    text-align: right;
+    padding: 40px;
+}
+
+
+summary {
+    /* border: 3px solid purple; */
+    width: 60%;
+    padding: 30px;
+}
+
 @media screen and (max-width: 1200px) {
     header {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+        margin: 2%;
+    }
+
+    li {
+        list-style: none;
+        padding: 30px;
     }
