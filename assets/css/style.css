@@ -62,12 +62,14 @@ div {
 }
 
 #headshot {
-    height: 70%;
+    position: relative;
+    height: 60%;
     padding: .2%;
     margin: 2%;
     background-color: var(--color-5);
     color: var(--color-2);
     border-radius: 100%;
+    top: 90px;
 }
 
 main {
@@ -99,8 +101,8 @@ aside {
 }
 
 summary {
-    /* border: 3px solid purple; */
-    width: 60%;
+    
+    width: 63%;
     margin: 1%;
     line-height: 1.2em;
     text-align: justify;
