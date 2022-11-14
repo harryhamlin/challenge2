@@ -33,11 +33,10 @@ nav {
     display: flex;
 }
 
-li {
+header li {
     list-style: none;
     padding: 30px;
     padding-top: 20%;
-    /* background-image: url("/assets/images/Ama\ Dablam.JPG") */   
 }
 
 nav a {
@@ -86,13 +85,17 @@ aside {
     display: inline;
     border-right: 2px solid var(--color-4);
     font-size: 38px;
-    width: 10%;
-    /* border: 3px solid red; */
+    width: 150px;
     text-align: right;
-    margin: 1%;
-    margin-left: 8%;
+    margin-top: 1%;
+    margin-left: 150px;
     margin-right: 4%;
     padding-right: 2%;
+}
+
+#projects {
+    width: 200px;
+    margin-left: 138px;
 }
 
 summary {
@@ -100,6 +103,7 @@ summary {
     width: 60%;
     margin: 1%;
     line-height: 1.2em;
+    text-align: justify;
 }
 
 article {
@@ -177,20 +181,29 @@ article a:hover {
     background-image: url("/assets/images/summitphoto.jpg");
 }
 
-
+#contactme nav li {
+    list-style: none;
+    margin: 10%;
+    margin-right: 20%; 
+}
 
 @media screen and (max-width: 1000px) {
-    header {
+    header{
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
 
+    article {
+        justify-content: center;
+      align-items: center;
+    }
+    
     h1 {
         margin: 2%;
     }
 
-    li {
+    header li {
         list-style: none;
         padding: 30px;
     }
@@ -202,7 +215,7 @@ article a:hover {
         padding: 0px
     }
 
-    aside {
+    aside, #projects {
         border-bottom: 2px solid var(--color-4);
         text-align: left;
         margin: 10px;
@@ -214,4 +227,9 @@ article a:hover {
         width: 90%;
         margin: 10px;
       padding: 5px;
+    }
+
+    #contactme nav {
+        flex-direction: column;
+        align-items: left;
     }
