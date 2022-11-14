@@ -44,7 +44,7 @@ nav a {
     color: var(--color-4)
 }
 
-li a:hover {
+header li a:hover {
     color: var(--color-3);
 }
 
@@ -185,6 +185,10 @@ article a:hover {
     list-style: none;
     margin: 10%;
     margin-right: 20%; 
+}
+
+#contactme nav li a:hover {
+    color: var(--color-1);
 }
 
 @media screen and (max-width: 1000px) {
