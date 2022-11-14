@@ -62,12 +62,13 @@ div {
     align-items:flex-end;
 }
 
-h2 {
-    font-size: 22px;;
-    padding: 2%;
+#headshot {
+    height: 70%;
+    padding: .2%;
     margin: 2%;
     background-color: var(--color-5);
-    color: var(--color-2)
+    color: var(--color-2);
+    border-radius: 100%;
 }
 
 main {
@@ -77,27 +78,80 @@ main {
 section {
     display: flex;
     flex-direction: row;
-    justify-content:center;
     /* border: 3px solid green; */
-    padding: 10px;
-    
+    padding: 1%;
 }
 
 aside {
+    display: inline;
     border-right: 2px solid var(--color-4);
     font-size: 38px;
-    width: 15%;
+    width: 10%;
     /* border: 3px solid red; */
     text-align: right;
-    margin: 40px;
+    margin: 1%;
+    margin-left: 8%;
+    margin-right: 4%;
+    padding-right: 2%;
 }
-
 
 summary {
     /* border: 3px solid purple; */
     width: 60%;
-    padding: 30px;
+    margin: 1%;
+    line-height: 1.2em;
 }
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+figure {
+    padding-right: 300px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--color-5);
+    margin: 20px;
+}
+
+figure h4 {
+    background-color: var(--color-5);
+    width: 150%;
+    padding: 10%;
+    padding-left: 5%;
+}
+
+figure:hover {
+    opacity: 50%;
+    color: var(--color-3)
+}
+
+#project1 {
+    background-image: url("/assets/images/cssscreenshot.jpeg");
+}
+
+#project2 {
+    background-image: url("/assets/images/astrophoto.jpg");
+}
+
+#project3{
+    background-image: url("/assets/images/cherryblossoms.JPG");
+}
+
+#project4{
+    background-image: url("/assets/images/puppy.jpg");
+}
+
+#project5 {
+    background-image: url("/assets/images/summitphoto.jpg");
+}
+
+
 
 @media screen and (max-width: 1000px) {
     header {
