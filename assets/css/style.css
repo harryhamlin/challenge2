@@ -108,60 +108,37 @@ article {
     align-items: center;
 }
 
-figure, article a {
-    padding-right: 300px;
-    padding-top: 150px;
-    padding-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    border: 3px solid var(--color-5);
-    margin: 20px;
-    text-decoration: none;
-    color: var(--color-4);
+figure {
+    margin: 2%;
 }
 
-/* article a {
-    padding-right: 600px;
-    padding-top: 300px;
-    padding-bottom: 40px;
-    background-size: cover;
-    background-position: center;
-    border: 3px solid var(--color-5);
-    margin: 20px;
+a{
     text-decoration: none;
-    color: var(--color-4);
-} */
+}
+
+figure img, a img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--color-5)    
+}
+
+#puppyphoto {
+    object-position: 0px -13px;
+}
+
+figure img:hover, a img:hover, img +h4:hover {
+    opacity: 50%;
+    color: var(--color-3);
+}
 
 h4 {
+    display:inline-block;
+    position: relative;
+    right: 305px;
+    bottom: 13px;
     background-color: var(--color-5);
-    width: 150%;
-    padding: 10%;
-    padding-left: 5%;
-}
-
-figure:hover, article a:hover {
-    opacity: 50%;
-    color: var(--color-3)
-}
-
-#project1 {
-    background-image: url("../images/cssscreenshot.jpeg");
-}
-
-#project2 {
-    background-image: url("../images/astrophoto.jpg");
-}
-
-#project3{
-    background-image: url("../images/cherryblossoms.JPG");
-}
-
-#project4{
-    background-image: url("../images/puppy.jpg");
-}
-
-#project5 {
-    background-image: url("../images/summitphoto.jpg");
+    color: var(--color-4);
 }
 
 #contactme nav li {
@@ -180,16 +157,31 @@ footer {
     justify-content: center;
 }
 
+@media screen and (max-width: 1230px) {
+    figure, article a {
+        max-width: 70%;
+        max-height: 50%;
+        padding-right: 300px;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        border: 3px solid var(--color-5);
+        margin: 20px;
+        text-decoration: none;
+        color: var(--color-4);
+    }
+
+    article a h4, article a h6 {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     
     header{
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-    }
-
-    article {
-        justify-content: center;
       align-items: center;
     }
     
@@ -217,6 +209,11 @@ footer {
         padding: 5px;
     }
 
+    article {
+        justify-content: center;
+      align-items: center;
+    }
+
     summary {
         width: 90%;
         margin: 10px;
@@ -228,4 +225,21 @@ footer {
         align-items: left;
     }
 
+    figure, article a {
+        max-width: 70%;
+        max-height: 50%;
+        padding-right: 300px;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        border: 3px solid var(--color-5);
+        margin: 20px;
+        text-decoration: none;
+        color: var(--color-4);
+    }
+
+    article a h4, article a h6 {
+        width: 100px;
+    }
 }
