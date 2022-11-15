@@ -127,13 +127,12 @@ article a {
     color: var(--color-4)
 }
 
-article a h4 {
+h4 {
     background-color: var(--color-5);
     width: 150%;
     padding: 10%;
     padding-left: 5%;
 }
-
 
 figure {
     padding-right: 300px;
@@ -145,23 +144,10 @@ figure {
     margin: 20px;
 }
 
-figure h4 {
-    background-color: var(--color-5);
-    width: 150%;
-    padding: 10%;
-    padding-left: 5%;
-}
-
-figure:hover {
+figure:hover, article a:hover {
     opacity: 50%;
     color: var(--color-3)
 }
-
-article a:hover {
-        opacity: 50%;
-        color: var(--color-3)
-}
-
 
 #project1 {
     background-image: url("/assets/images/cssscreenshot.jpeg");
