@@ -101,7 +101,7 @@ aside {
 }
 
 summary {
-    
+
     width: 63%;
     margin: 1%;
     line-height: 1.2em;
@@ -124,7 +124,7 @@ article a {
     border: 3px solid var(--color-5);
     margin: 20px;
     text-decoration: none;
-    color: var(--color-4)
+    color: var(--color-4);
 }
 
 h4 {
@@ -180,6 +180,7 @@ figure:hover, article a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+    
     header{
       flex-direction: column;
       justify-content: center;
@@ -225,3 +226,5 @@ figure:hover, article a:hover {
         flex-direction: column;
         align-items: left;
     }
+
+}
