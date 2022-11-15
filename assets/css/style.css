@@ -109,18 +109,25 @@ article {
 }
 
 figure {
-    margin: 2%;
+    margin: 8px 0px 8px 0px;
 }
 
 a{
     text-decoration: none;
 }
 
-figure img, a img {
+figure img {
     width: 300px;
     height: 150px;
     object-fit: cover;
-    border: 3px solid var(--color-5)    
+    border: 3px solid var(--color-5);
+}
+
+a img {
+    width: 697px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid var(--color-5);
 }
 
 #puppyphoto {
@@ -139,6 +146,7 @@ h4 {
     bottom: 13px;
     background-color: var(--color-5);
     color: var(--color-4);
+    padding-right: 20px;
 }
 
 #contactme nav li {
