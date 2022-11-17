@@ -14,6 +14,7 @@ body {
     background-color: var(--color-3);
 }
 
+/* this header selector sets the spacing of the header bar at the top */
 header {
     display: flex;
     flex-direction: row;
@@ -29,26 +30,31 @@ h1 {
     margin-left: 5%;
 }
 
+/* this allows the items within the nav element (list items) to be displayed as flex items */
 nav {
     display: flex;
 }
 
+/* this selector only accesses the li items in the header nav bar */
 header li {
     list-style: none;
     padding: 30px;
     padding-top: 20%;
 }
 
+/* this accesses both the anchors in the nav bar at the top as well as the contact me links at the bottom of the webpage */
 nav a {
     text-decoration: none;
     color: var(--color-4)
 }
 
+/*this pseudo class lets the anchors in the header turn a specific color, different from the nav bar at the bottom of the page */
 header a:hover {
     color: var(--color-3);
 }
 
-#header {
+/*this id selector puts parameters on the buffer image below the header, with the flex parameters allowing the headshot to be put in a particular place*/
+#buffer_image {
     height: 300px;
     width: 100%;
     margin-bottom: 35px;
@@ -60,7 +66,7 @@ header a:hover {
     align-items:flex-end;
 }
 
-#headshot {
+img[src*="Headshot"] {
     position: relative;
     height: 60%;
     padding: .2%;
@@ -92,12 +98,14 @@ aside {
 summary {
     width: 63%;
     margin: 1%;
+    margin-top: 3%;
     line-height: 1.2em;
     text-align: justify;
 }
 
 article {
     display: flex;
+    width: 55%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -113,15 +121,15 @@ article a img {
 
 ul {
     height: 150px;
-    width: 400px;
+    width: 350px;
     margin:10px;
     list-style: none;
     
 }
 
-#first {
+ul:first-child {
     height: 300px;
-    width: 800px;
+    width: 700px;
     flex-grow: 2;
 }
 
@@ -129,7 +137,7 @@ ul {
     object-position: 0px px;
 } */
 
-ul img:hover{
+ul:hover{
     opacity: 50%;
     color: var(--color-3);
 }
@@ -160,9 +168,9 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    #first {
+    ul:first-child {
     height: 150px;
-    width: 400px;
+    width: 350px;
     margin:20px;
     list-style: none;
     flex-grow:unset;
@@ -194,7 +202,11 @@ footer {
         padding: 0px
     }
 
-    ul, #first {
+    article {
+        align-self: center;
+    }
+
+    ul, ul:first-child {
         height: 150;
         width: 300px;
         margin: 10px;
@@ -202,7 +214,7 @@ footer {
         flex-grow:unset;
     }
 
-    aside, #projects {
+    aside {
         border-bottom: 2px solid var(--color-4);
         text-align: left;
         margin: 10px;
@@ -210,11 +222,12 @@ footer {
         padding: 5px;
     }
 
-    article {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    }
+    /* article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } */
 
     summary {
         width: 90%;
@@ -226,22 +239,4 @@ footer {
         flex-direction: column;
         align-items: left;
     }
-
-    /* figure, article a {
-        max-width: 70%;
-        max-height: 50%;
-        padding-right: 300px;
-        padding-top: 150px;
-        padding-bottom: 20px;
-        background-size: cover;
-        background-position: center;
-        border: 3px solid var(--color-5);
-        margin: 20px;
-        text-decoration: none;
-        color: var(--color-4);
-    }
-
-    article a h4, article a h6 {
-        width: 100px;
-    } */
 }
