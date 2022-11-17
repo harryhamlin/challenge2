@@ -48,7 +48,7 @@ header a:hover {
     color: var(--color-3);
 }
 
-div {
+#header {
     height: 300px;
     width: 100%;
     margin-bottom: 35px;
@@ -89,11 +89,6 @@ aside {
     padding-right: 2%;
 }
 
-#projects {
-    width: 200px;
-    margin-left: 138px;
-}
-
 summary {
     width: 63%;
     margin: 1%;
@@ -104,37 +99,37 @@ summary {
 article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 2%;
 }
 
-figure {
-    margin: 8px 0px 8px 0px;
+article a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid var(--color-5);
 }
 
-a{
-    text-decoration: none;
-}
-
-figure img {
-    width: 300px;
+ul {
     height: 150px;
-    object-fit: cover;
-    border: 3px solid var(--color-5);
+    width: 400px;
+    margin:10px;
+    list-style: none;
+    
 }
 
-a img {
-    width: 697px;
+#first {
     height: 300px;
-    object-fit: cover;
-    border: 3px solid var(--color-5);
+    width: 800px;
+    flex-grow: 2;
 }
 
-#puppyphoto {
-    object-position: 0px -13px;
-}
+/* #puppyphoto {
+    object-position: 0px px;
+} */
 
-figure img:hover, a img:hover, img +h4:hover {
+ul img:hover{
     opacity: 50%;
     color: var(--color-3);
 }
@@ -142,8 +137,7 @@ figure img:hover, a img:hover, img +h4:hover {
 h4 {
     display:inline-block;
     position: relative;
-    right: 305px;
-    bottom: 13px;
+    bottom: 20%;
     background-color: var(--color-5);
     color: var(--color-4);
     padding-right: 20px;
@@ -165,27 +159,17 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 1230px) {
-    figure, article a {
-        max-width: 70%;
-        max-height: 50%;
-        padding-right: 300px;
-        padding-top: 150px;
-        padding-bottom: 20px;
-        background-size: cover;
-        background-position: center;
-        border: 3px solid var(--color-5);
-        margin: 20px;
-        text-decoration: none;
-        color: var(--color-4);
-    }
-
-    article a h4, article a h6 {
-        width: 100px;
+@media screen and (max-width: 1200px) {
+    #first {
+    height: 150px;
+    width: 400px;
+    margin:20px;
+    list-style: none;
+    flex-grow:unset;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     
     header{
       flex-direction: column;
@@ -204,6 +188,7 @@ footer {
 
     section {
         flex-direction: column;
+        flex-wrap:wrap;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 0px
@@ -218,8 +203,9 @@ footer {
     }
 
     article {
-        justify-content: center;
-      align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
     }
 
     summary {
@@ -233,7 +219,7 @@ footer {
         align-items: left;
     }
 
-    figure, article a {
+    /* figure, article a {
         max-width: 70%;
         max-height: 50%;
         padding-right: 300px;
@@ -249,5 +235,5 @@ footer {
 
     article a h4, article a h6 {
         width: 100px;
-    }
+    } */
 }
