@@ -194,6 +194,14 @@ footer {
         padding: 0px
     }
 
+    ul, #first {
+        height: 150;
+        width: 300px;
+        margin: 10px;
+        list-style: none;
+        flex-grow:unset;
+    }
+
     aside, #projects {
         border-bottom: 2px solid var(--color-4);
         text-align: left;
