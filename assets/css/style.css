@@ -1,9 +1,9 @@
 :root {
---color-1: #586F7C;
---color-2: #14080E;
---color-3: #F4F4F9;
---color-4: #000F08;
---color-5: #2F4858;
+    --color-1: #586F7C;
+    --color-2: #14080E;
+    --color-3: #F4F4F9;
+    --color-4: #000F08;
+    --color-5: #2F4858;
 }
 
 * {
@@ -62,8 +62,8 @@ header a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: row-reverse;  
-    align-items:flex-end;
+    flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
 /* id selector allowing the headshot to be positioned properly*/
@@ -122,14 +122,14 @@ article a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 /*parameters for the photo links including sizes margins and borders*/
 ul {
     height: 150px;
     width: 350px;
-    margin:10px;
+    margin: 10px;
     border: 3px solid var(--color-1);
     flex-grow: 2;
 }
@@ -147,14 +147,14 @@ ul:first-child {
 } */
 
 /*makes the links turn opaque in their entirety when hovered */
-ul:hover{
+ul:hover {
     opacity: 50%;
     color: var(--color-3);
 }
 
 /*positioning and style for the project titles*/
 h4 {
-    display:inline-block;
+    display: inline-block;
     position: relative;
     bottom: 20%;
     background-color: var(--color-1);
@@ -166,7 +166,7 @@ h4 {
 #contactme nav li {
     list-style: none;
     margin: 10%;
-    margin-right: 5%; 
+    margin-right: 5%;
 }
 
 #contactme nav {
@@ -203,13 +203,13 @@ footer {
 
 /*restructuring the flex layout entirely for smaller screens (such as phones) and making everything a bit smaller for cleaner scrolling*/
 @media screen and (max-width: 768px) {
-    
-    header{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     h1 {
         margin: 2%;
     }
@@ -221,7 +221,7 @@ footer {
 
     section {
         flex-direction: column;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 0px
@@ -246,7 +246,7 @@ footer {
         flex-grow: 2;
     }
 
-    h4{
+    h4 {
         bottom: 30%;
     }
 
@@ -261,7 +261,7 @@ footer {
     summary {
         width: 90%;
         margin: 10px;
-      padding: 5px;
+        padding: 5px;
     }
 
     #contactme nav {
