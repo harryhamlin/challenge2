@@ -34,4 +34,4 @@ All links work correctly as per the user-story, both locally and globally.
 
 ## Link to Deployed Application
 
-<a href="https://harryhamlin.github.io/harry_hamlin_portoflio/">https://harryhamlin.github.io/harry_hamlin_portoflio/</a>
+<a href="https://harryhamlin.github.io/harry_hamlin_portfolio/">https://harryhamlin.github.io/harry_hamlin_portfolio/</a>
