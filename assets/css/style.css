@@ -1,13 +1,13 @@
 :root {
---color-1: #72A98F;
---color-2: #2B50AA;
---color-3: #F0Eff4;
+--color-1: #586F7C;
+--color-2: #14080E;
+--color-3: #F4F4F9;
 --color-4: #000F08;
---color-5: #56667A;
+--color-5: #2F4858;
 }
 
 * {
-    font-family: Tahoma;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 body {
@@ -130,7 +130,7 @@ ul {
     height: 150px;
     width: 350px;
     margin:10px;
-    border: 3px solid var(--color-5);
+    border: 3px solid var(--color-1);
     flex-grow: 2;
 }
 
@@ -157,7 +157,7 @@ h4 {
     display:inline-block;
     position: relative;
     bottom: 20%;
-    background-color: var(--color-5);
+    background-color: var(--color-1);
     color: var(--color-4);
     padding-right: 20px;
 }
@@ -166,7 +166,11 @@ h4 {
 #contactme nav li {
     list-style: none;
     margin: 10%;
-    margin-right: 20%; 
+    margin-right: 5%; 
+}
+
+#contactme nav {
+    width: 50%
 }
 
 /*changes link color to a different color than the top nav bar when hovered*/
@@ -189,6 +193,11 @@ footer {
 
     article {
         width: 63%;
+    }
+
+    #contactme nav {
+        flex-direction: column;
+        align-items: left;
     }
 }
 
